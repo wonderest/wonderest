@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/MovePage/MovePage.jsx"],"names":["MovePage"],"mappings":"2GAAA,2BAUeA,UARE,WACf,OACE,oCACE","file":"static/js/4.a075461a.chunk.js","sourcesContent":["import React from 'react';\n\nconst MovePage = () => {\n  return (\n    <>\n      <h1>ModePage</h1>\n    </>\n  );\n};\n\nexport default MovePage;\n"],"sourceRoot":""}
