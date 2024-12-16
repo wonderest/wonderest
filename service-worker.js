@@ -11,7 +11,9 @@ async function cacheCoreAssets() {
 		"/favicon.ico",
 		"/icon.png",
 		"/icon.svg",
+		"/icons/web-app-manifest-512x512.png",
 		"/fallback",
+		"/manifest.json",
 	]);
 }
 
@@ -160,9 +162,6 @@ self.addEventListener("fetch", (event) => {
 	// 	event.respondWith(dynamicCaching(request));
 	// }
 
-	if (event.request.mode === "navigate") {
-		event.respondWith(cacheFirstStrategy(request));
-	} else {
-		event.respondWith(dynamicCaching(request));
-	}
+	event.respondWith(cacheFirstStrategy(request));
+	event.respondWith(dynamicCaching(request));
 });
