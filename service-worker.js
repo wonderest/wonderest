@@ -166,4 +166,5 @@ self.addEventListener("fetch", (event) => {
 		event.respondWith(cacheFirstStrategy(request));
 	} else {
 		event.respondWith(dynamicCaching(request));
-	});
+	}
+});
