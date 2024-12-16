@@ -45,7 +45,7 @@ async function dynamicCaching(request) {
 		await cache.put(request, responseClone);
 		return response;
 	} catch (error) {
-		console.error("Dynamic caching failed:", error);
+		// console.error("Dynamic caching failed:", error);
 		return caches.match(request);
 	}
 }
@@ -162,6 +162,8 @@ self.addEventListener("fetch", (event) => {
 	// 	event.respondWith(dynamicCaching(request));
 	// }
 
-	event.respondWith(cacheFirstStrategy(request));
-	event.respondWith(dynamicCaching(request));
-});
+	if (event.request.mode === "navigate") {
+		event.respondWith(cacheFirstStrategy(request));
+	} else {
+		event.respondWith(dynamicCaching(request));
+	});
