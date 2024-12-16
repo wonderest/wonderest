@@ -7,12 +7,20 @@ async function cacheCoreAssets() {
 	const cache = await caches.open(CACHE_NAME);
 	return cache.addAll([
 		"/",
+		"/_next/static/chunks/4bd1b696-351eec085a5c62cd.js",
+		"/_next/static/chunks/517-09c2ffbcc85a6358.js",
+		"/_next/static/chunks/app/fallback/page-648d2b8ed58c382b.js",
+		"/_next/static/chunks/app/page-d7557828286c79e9.js",
+		"/_next/static/chunks/main-app-b8a12b7e923815ac.js",
+		"/_next/static/chunks/webpack-60d835819e29e072.js",
+		"/_next/static/css/9acd44dbb3695032.css",
 		"/apple-icon.png",
 		"/favicon.ico",
 		"/icon.png",
 		"/icon.svg",
 		"/icons/web-app-manifest-512x512.png",
 		"/fallback",
+		"/index.txt?_rsc=obahw",
 		"/manifest.json",
 	]);
 }
