@@ -1,8 +1,8 @@
 {
 	"name": "Wonderest",
 	"short_name": "Wonderest",
-	"theme_color": "#8936FF",
-	"background_color": "#333333",
+	"background_color": "#ffffff",
+	"theme_color": "#000000",
 	"start_url": "/",
 	"id": "Wonderest",
 	"display": "standalone",
